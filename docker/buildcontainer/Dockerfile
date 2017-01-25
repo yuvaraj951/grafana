@@ -40,7 +40,7 @@ RUN	go get github.com/tools/godep
 #        && apt-get install -qy node
 
 ENV    NODE_VER 4.4.1
-RUN apt-get install npm
+RUN yum install npm
 #RUN    wget https://nodejs.org/dist/v$NODE_VER/node-v$NODE_VER-linux-armv7l.tar.gz && \
  #      tar -xf node-v$NODE_VER-linux-armv7l.tar.gz && \
   #     cd node-v$NODE_VER-linux-armv7l && \
