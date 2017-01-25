@@ -68,7 +68,7 @@ WORKDIR $GOPATH/src/github.com/grafana/grafana
 
 # if GRAFANA_VERSION not master, get specific version
 #RUN	if [[ $GRAFANA_VERSION != master* ]]; then git checkout tags/v$GRAFANA_VERSION; fi
-RUN	git checkout tags/v$GRAFANA_VERSION
+#RUN	git checkout tags/v$GRAFANA_VERSION
 
 # go setup
 RUN     go run build.go setup 
