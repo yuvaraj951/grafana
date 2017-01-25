@@ -74,9 +74,11 @@ WORKDIR $GOPATH/src/github.com/grafana/grafana
 RUN     go run build.go setup 
         
 
-RUN	npm install -g grunt-cli
+RUN apt install npm
 
 RUN	npm install
+
+RUN	npm install -g grunt-cli
 
 RUN	go run build.go build
 
