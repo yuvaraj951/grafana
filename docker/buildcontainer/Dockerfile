@@ -31,8 +31,8 @@ RUN	go get github.com/tools/godep
    #    rm phantomjs-2.1.1-linux-armv6l.tar.gz && \
     #   rm -r phantomjs-2.1.1-linux-armv6l/
 
-RUN curl -O http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_0.8.16~exp5ubuntu13_amd64.deb && \
-    tar -xvf apt_0.8.16~exp5ubuntu13_amd64.deb -C /usr/local
+#RUN curl -O http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_0.8.16~exp5ubuntu13_amd64.deb && \
+ #   tar -xvf apt_0.8.16~exp5ubuntu13_amd64.deb -C /usr/local
     #dpkg -i apt_*.deb
 
 # install node 0.12.6
