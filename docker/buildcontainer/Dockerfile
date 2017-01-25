@@ -24,12 +24,12 @@ RUN	go get github.com/tools/godep
 #        && chmod a+x phantomjs
 
 # install phantomjs 2.1.1
-RUN    wget https://github.com/timstanley1985/phantomjs-linux-armv6l/raw/master/phantomjs-2.1.1-linux-armv6l.tar.gz && \
-       tar -xf phantomjs-2.1.1-linux-armv6l.tar.gz && \
-       cp phantomjs-2.1.1-linux-armv6l/bin/phantomjs /usr/local/bin/phantomjs && \
-       chmod a+x /usr/local/bin/phantomjs && \
-       rm phantomjs-2.1.1-linux-armv6l.tar.gz && \
-       rm -r phantomjs-2.1.1-linux-armv6l/
+#RUN    wget https://github.com/timstanley1985/phantomjs-linux-armv6l/raw/master/phantomjs-2.1.1-linux-armv6l.tar.gz && \
+#       tar -xf phantomjs-2.1.1-linux-armv6l.tar.gz && \
+ #      cp phantomjs-2.1.1-linux-armv6l/bin/phantomjs /usr/local/bin/phantomjs && \
+  #     chmod a+x /usr/local/bin/phantomjs && \
+   #    rm phantomjs-2.1.1-linux-armv6l.tar.gz && \
+    #   rm -r phantomjs-2.1.1-linux-armv6l/
 
 
 
@@ -38,13 +38,13 @@ RUN    wget https://github.com/timstanley1985/phantomjs-linux-armv6l/raw/master/
 #        && apt-get install -qy node
 
 ENV    NODE_VER 4.4.1
-RUN    wget https://nodejs.org/dist/v$NODE_VER/node-v$NODE_VER-linux-armv7l.tar.gz && \
-       tar -xf node-v$NODE_VER-linux-armv7l.tar.gz && \
-       cd node-v$NODE_VER-linux-armv7l && \
-       cp -R * /usr/local/ && \
-       cd .. && \
-       rm -r node-v$NODE_VER-linux-armv7l && \
-       rm  node-v$NODE_VER-linux-armv7l.tar.gz
+#RUN    wget https://nodejs.org/dist/v$NODE_VER/node-v$NODE_VER-linux-armv7l.tar.gz && \
+ #      tar -xf node-v$NODE_VER-linux-armv7l.tar.gz && \
+  #     cd node-v$NODE_VER-linux-armv7l && \
+   #    cp -R * /usr/local/ && \
+    #   cd .. && \
+     #  rm -r node-v$NODE_VER-linux-armv7l && \
+      # rm  node-v$NODE_VER-linux-armv7l.tar.gz
 
 
 
