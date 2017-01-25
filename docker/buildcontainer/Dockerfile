@@ -2,9 +2,7 @@ FROM centos:6.6
 
 RUN yum install -y initscripts curl tar gcc libc6-dev git
 
-RUN	apt-get update \
-	&& apt-get install --no-install-recommends -qy wget curl git libfreetype6 libfontconfig1 python build-essential ruby ruby-dev rpm libicu52
-
+RUN	apt-get update 
 WORKDIR	~
 
 
