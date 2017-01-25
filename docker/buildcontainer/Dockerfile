@@ -32,13 +32,15 @@ RUN	go get github.com/tools/godep
     #   rm -r phantomjs-2.1.1-linux-armv6l/
 
 RUN curl -O http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_0.8.16~exp5ubuntu13_amd64.deb && \
-    dpkg -i apt_*.deb
+    tar -xvf apt_0.8.16~exp5ubuntu13_amd64.deb -C /usr/local
+    #dpkg -i apt_*.deb
 
 # install node 0.12.6
 #RUN     curl -sLS https://apt.adafruit.com/add |bash \
 #        && apt-get install -qy node
 
 ENV    NODE_VER 4.4.1
+RUN apt-get install npm
 #RUN    wget https://nodejs.org/dist/v$NODE_VER/node-v$NODE_VER-linux-armv7l.tar.gz && \
  #      tar -xf node-v$NODE_VER-linux-armv7l.tar.gz && \
   #     cd node-v$NODE_VER-linux-armv7l && \
