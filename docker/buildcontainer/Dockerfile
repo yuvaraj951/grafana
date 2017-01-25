@@ -2,7 +2,7 @@ FROM centos:6.6
 
 RUN yum install -y initscripts curl tar gcc libc6-dev git
 
-RUN	apt-get update 
+RUN	sudo apt-get update 
 WORKDIR	~
 
 
