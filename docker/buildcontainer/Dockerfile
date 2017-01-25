@@ -8,8 +8,8 @@ WORKDIR	~
 
 # install go
 ENV     GOPATH /gopath
-RUN	curl -O https://storage.googleapis.com/golang/go1.6.linux-amd64.tar.gz && \
-	tar -xvf go1.6.linux-amd64.tar.gz -C /usr/local && \
+RUN	curl -O https://storage.googleapis.com/golang/go1.7.linux-amd64.tar.gz && \
+	tar -xvf go1.7.linux-amd64.tar.gz -C /usr/local && \
 	mkdir -p $GOPATH
 ENV	PATH /usr/local/go/bin:$GOPATH/bin:$PATH
 ENV	GOARM 6
