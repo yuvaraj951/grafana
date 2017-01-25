@@ -49,7 +49,7 @@ ENV    NODE_VER 4.4.1
 
 
 # install fpm
-RUN     gem install fpm
+#RUN     gem install fpm
 
 
 
